@@ -1,0 +1,78 @@
+{
+  "name": "xcaps-domain",
+  "version": "0.4.0",
+  "description": "领域驱动设计的框架实现",
+  "main": "index.js",
+  "directories": {},
+  "dependencies": {
+    "amqplib": "^0.5.2",
+    "bluebird": "3.5.1",
+    "chai": "4.1.2",
+    "cls-hooked": "4.2.2",
+    "continuation-local-storage": "3.2.1",
+    "js-yaml": "^3.10.0",
+    "lodash": "4.17.4",
+    "moment-timezone": "^0.5.17",
+    "mysql2": "1.5.2",
+    "path": "0.12.7",
+    "rms-appengine": "1.4.2",
+    "rootrequire": "1.0.0",
+    "sequelize": "4.32.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "4.17.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "commitmsg": "validate-commit-msg"
+  },
+  "config": {
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "build",
+        "ci",
+        "chore",
+        "revert",
+        "temp",
+        "debug",
+        "review"
+      ],
+      "scope": {
+        "required": false,
+        "allowed": [
+          "*"
+        ],
+        "validate": false,
+        "multiple": false
+      },
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": ".+",
+      "subjectPatternErrorMsg": "subject does not match subject pattern!",
+      "helpMessage": "",
+      "autoFix": false
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}

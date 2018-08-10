@@ -15,7 +15,7 @@
     "moment-timezone": "^0.5.17",
     "mysql2": "1.5.2",
     "path": "0.12.7",
-    "rms-appengine": "1.4.2",
+    "xcaps-appengine": "1.4.2",
     "rootrequire": "1.0.0",
     "sequelize": "4.32.1",
     "uuid": "^3.3.2"
